@@ -22,5 +22,17 @@ li.menu a {
 
 li.menu a:hover {
     background-color: #111;
-	color: #009688
+	color: #009688;
+}
+
+i.links:hover { 
+  background-color: black;
+	color: #009688;
+}
+a.checkoutlinks {
+text-decoration:none;
+}
+a.checkoutlinks:hover{
+text-decoration:underline;
+color: #009688;
 }

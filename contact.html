@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>Contact | Medha Juneja</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/menu.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+</style>
+<body class="w3-light-grey">
+<ul class="menu">
+  <li class="menu"><a href="index.html"><i class="fa fa-user"></i>&nbsp;&nbsp;About Me</a></li>
+  <li class="menu"><a href="resume.html"><i class="fa fa-address-card"></i>&nbsp;&nbsp;Resume</a></li>
+  <li class="menu"><a href="blog.html"><i class="fa fa-th"></i>&nbsp;&nbsp;Blog</a></li>
+  <li class="menu"><a class="active" href="contact.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Contact Me</a></li>
+</ul>
+
+<div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+<div id="map" style="width:400px;height:400px;left:100px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+		<i class="fa fa-briefcase fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Research Assistant, DFKI GmbH</p>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Saarbrücken, Germany</br></br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>medhaj001(at)gmail.com</br></br>
+		<div class="w3-margin-right"style="border: 1px solid #111; overflow: hidden; width:430px;height:220px">
+		<iframe scrolling="no" src="https://www.dfki.de/web/forschung/asr/mitarbeiter/base_view?uid=meju01" style="border: 1px none; margin-left: -207px; height: 812px; margin-top: -225px; width: 650px;">
+		</iframe>
+		</div>
+      </div>
+	  </div>
+</div>
+
+
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(49.256811, 7.042171);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 17};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW8-06Oo7RqHqZkG6WfMyFnK5dcLAu0jY&callback=myMap"></script>
+
+</body>
+</html>
