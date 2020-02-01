@@ -1,11 +1,17 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core/styles";
+import Link from '@material-ui/core/Link';
 import classNames from 'classnames';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import profilepic from 'assets/img/cvpicgrey.jpg';
 import Button from "components/CustomButtons/Button.js";
+
+function handleClick(event) {
+  event.preventDefault();
+  console.info('You clicked a Link.');
+}
 
 const useStyles = makeStyles(styles);
 
@@ -28,14 +34,14 @@ const ProfilePic = () => {
                   </div>
                   <div className={classes.name}>
                     <h1 className={classes.title}>Medha Juneja</h1>
-                    <h4>Computer Vision Engineer</h4>
-                    <Button justIcon link className={classes.margin5}>
+                    <h4 className={classes.shorttitle}>Computer Vision Engineer</h4>
+                    <Button target="_blank" href="https://www.linkedin.com/in/medha-juneja/" justIcon link className={classes.margin5}>
                       <i className={"fab fa-linkedin"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button target="_blank" href="https://www.xing.com/profile/Medha_Juneja/" justIcon link className={classes.margin5}>
                       <i className={"fab fa-xing"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button target="_blank" href="https://github.com/medha-juneja" justIcon link className={classes.margin5}>
                       <i className={"fab fa-github"} />
                     </Button>
                   </div>

@@ -43,6 +43,10 @@ const profilePageStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
+  shorttitle:{
+    fontFamily:"Roboto",
+    fontWeight:"400"
+  },
   socials: {
     marginTop: "0",
     width: "100%",
