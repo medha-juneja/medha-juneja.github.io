@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from './components/Header/Header.js';
-import logo from './logo.svg';
+import ProfilePic from './customcomponents/ProfilePic.js';
 import './App.css';
+
+
 
 // function App() {
 //   return (
@@ -28,8 +30,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <Header></Header>
-      <img src={logo} className="App-logo" alt="logo" />
+      <Header color="info"></Header>
+      <ProfilePic />
       </div>
 
     )
