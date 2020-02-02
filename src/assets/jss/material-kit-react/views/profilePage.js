@@ -47,6 +47,17 @@ const profilePageStyle = {
     fontFamily:"Roboto",
     fontWeight:"400"
   },
+
+  aligniconandtext: {
+  display: "flex",
+  align: "center"
+},
+
+profilebuttons: {
+  fontSize: "15px",
+  textTransform: "none",
+  marginLeft: "100px",
+},
   socials: {
     marginTop: "0",
     width: "100%",
@@ -58,10 +69,14 @@ const profilePageStyle = {
     fontSize: "20px",
     color: "#999"
   },
+  margin5Left: {
+    marginLeft:"5px"
+  },
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center"
   }
+
 };
 
 export default profilePageStyle;
