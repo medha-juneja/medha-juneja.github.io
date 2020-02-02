@@ -31,16 +31,11 @@ const ProfilePic = () => {
                   <div className={classes.name}>
                     <h1 className={classes.title}>Medha Juneja</h1>
                     { /* <h4 className={classes.shorttitle}>Computer Vision Engineer</h4> */}
-                    <div>
-                    <Button color="transparent" link justIcon className={classes.profilebuttons}>
-                    <MailOutline />
+                    <div className={classNames(classes.iconandtext, classes.profilebuttons)}>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                     <span className={classes.margin5Left}>medhaj001@gmail.com</span>
-                    </Button>
-
-                    <Button color="transparent" link justIcon className={classes.profilebuttons}>
-                    <i className={"fa fa-map-marker"} />
+                    <i className={classNames("fa fa-map-marker", classes.margin15Left)} />
                     <span className={classes.margin5Left}>Berlin</span>
-                    </Button>
                     </div>
 
                     <Button target="_blank" href="https://www.linkedin.com/in/medha-juneja/" justIcon link>

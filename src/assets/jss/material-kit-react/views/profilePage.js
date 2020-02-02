@@ -45,18 +45,20 @@ const profilePageStyle = {
   },
   shorttitle:{
     fontFamily:"Roboto",
-    fontWeight:"400"
+    fontWeight:"400",
   },
 
-  aligniconandtext: {
-  display: "flex",
-  align: "center"
+iconandtext: {
+    display:"flex",
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
 },
 
 profilebuttons: {
   fontSize: "15px",
-  textTransform: "none",
-  marginLeft: "100px",
+  marginLeft: "150px",
+  color: "#999",
 },
   socials: {
     marginTop: "0",
@@ -71,6 +73,9 @@ profilebuttons: {
   },
   margin5Left: {
     marginLeft:"5px"
+  },
+  margin15Left:{
+    marginLeft:"15px"
   },
   navWrapper: {
     margin: "20px auto 50px auto",
