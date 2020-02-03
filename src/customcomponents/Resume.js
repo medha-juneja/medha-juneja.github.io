@@ -6,7 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
 import Button from "components/CustomButtons/Button.js";
-import {WorkOutline, LocalLibrary} from "@material-ui/icons";
+import {WorkOutline, LocalLibrary, Code} from "@material-ui/icons";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
@@ -75,6 +75,8 @@ const Resume = () => {
                         </span>
                       </div>
 
+
+
                       <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
                         <LocalLibrary/><h2 className={classes.cvheading}>Education</h2>
                       </div>
@@ -112,6 +114,35 @@ const Resume = () => {
                         </div>
 
 
+                        <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
+                          <Code/><h2 className={classes.cvheading}>Technical Skills</h2>
+                        </div>
+                          <Button color="info" size ="lg" round>C++</Button>
+                          <Button color="info" size ="lg" round>Python</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>Javascript</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>C#</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>R</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>SQL</Button>
+                          <br/>
+                          <Button color="info" size ="lg" round>DICOM</Button>
+                          <Button color="info" size ="lg" round>DCMTK</Button>
+                          <Button color="info" size ="lg" round>VTK</Button>
+                          <Button color="info" size ="lg" round>ITK</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>Unreal Engine</Button>
+                          <br/>
+                          <Button color="info" size ="lg" round>OpenCV</Button>
+                          <Button color="info" size ="lg" round>Eigen</Button>
+                          <Button color="info" size ="lg" round>VCGLib</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size="lg" round>Boost</Button>
+                          <br/>
+                          <Button color="info" size ="lg" round>Git</Button>
+                          <Button color="info" size ="lg" round>SVN</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} color="info" size ="lg" round>Docker</Button>
+                          <br/>
+                          <Button color="info" size ="lg" round>SCRUM</Button>
+                          <Button color="info" size ="lg" round>Kanban</Button>
+                          <Button color="info" size ="lg" round>JIRA</Button>
+                          <Button color="info" size ="lg" round>Trello</Button>
 
 
 
