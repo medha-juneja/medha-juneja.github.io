@@ -6,7 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
 import Button from "components/CustomButtons/Button.js";
-import {WorkOutline, LocalLibrary, Code} from "@material-ui/icons";
+import {WorkOutline, LocalLibrary, Code, Language} from "@material-ui/icons";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
@@ -137,7 +137,7 @@ const Resume = () => {
                           <br/>
                           <Button color="info" size ="lg" round>Git</Button>
                           <Button color="info" size ="lg" round>SVN</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} color="info" size ="lg" round>Docker</Button>
+                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>Docker</Button>
                           <br/>
                           <Button color="info" size ="lg" round>SCRUM</Button>
                           <Button color="info" size ="lg" round>Kanban</Button>
@@ -145,6 +145,24 @@ const Resume = () => {
                           <Button color="info" size ="lg" round>Trello</Button>
 
 
+                          <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
+                            <Language/><h2 className={classes.cvheading}>Language Skills</h2>
+                          </div>
+                            <Button color="info" size ="lg" round>English</Button>
+                            <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>German (A2)</Button>
+
+                          <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
+                            <i class="fa fa-certificate" aria-hidden="true"/><h2 className={classes.cvheading}>Patents</h2>
+                          </div>
+                            <div className={classes.cvdescription_container}>
+                              <span style={{color: "#999", fontSize:"17px", textAlign:"left"}}>
+                              <ul>
+                                <li><b>An immersive telepresence system for the radiological workflow</b>, DE, Submitted in April 2019.</li>
+                                <li><b>Technique for performing a quality assessment for a medical image</b>, DE, Submitted in January 2019.</li>
+                                <li><b>Technique for configuring a medical imaging device,</b>, DE, Submitted in January 2019.</li>
+                              </ul>
+                              </span>
+                            </div>
 
                 </div>
               </GridItem>
