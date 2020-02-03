@@ -5,7 +5,7 @@ const resumePageStyle = {
   resume: {
     textAlign: "center",
     "& img": {
-      maxWidth: "550px",
+      maxWidth: "800px",
       width: "100%",
       margin: "0 auto",
       marginTop: "200px",
@@ -13,10 +13,10 @@ const resumePageStyle = {
     }
   },
   description: {
-    margin: "1.071rem auto 0",
-    maxWidth: "600px",
+    marginLeft: "30px",
     color: "#999",
-    textAlign: "center !important"
+    textAlign: "left",
+    marginLeft: "130px"
   },
 
   main: {
@@ -38,19 +38,39 @@ const resumePageStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
-  shorttitle:{
+  cvheading:{
     fontFamily:"Roboto",
     fontWeight:"400",
     marginLeft: "10px"
   },
 
-  iconandtext: {
+  cvheading_container: {
     display:"flex",
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     color: "#00acc1",
+    marginLeft: "270px"
 },
+
+
+  cvshorttitle_container:{
+    display:"flex",
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    color: "#999",
+    marginLeft: "-110px",
+    fontFamily: "Roboto",
+    position: "relative"
+  },
+
+  cvdescription_container:{
+    display:"flex",
+    flex: "0 0 auto",
+    flexDirection: 'column',
+    position:"relative"
+  },
 
 profilebuttons: {
   fontSize: "15px",
