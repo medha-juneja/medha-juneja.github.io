@@ -13,7 +13,7 @@ const resumePageStyle = {
     }
   },
   description: {
-    marginLeft: "30px",
+    marginLeft: "40px",
     color: "#999",
     textAlign: "left",
     marginLeft: "130px"
@@ -62,7 +62,8 @@ const resumePageStyle = {
     color: "#999",
     marginLeft: "-110px",
     fontFamily: "Roboto",
-    position: "relative"
+    position: "relative",
+    textAlign: "left"
   },
 
   cvdescription_container:{

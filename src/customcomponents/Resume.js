@@ -6,7 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
 import Button from "components/CustomButtons/Button.js";
-import {WorkOutline} from "@material-ui/icons";
+import {WorkOutline, LocalLibrary} from "@material-ui/icons";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
@@ -25,11 +25,11 @@ const Resume = () => {
                     { /* <h4 className={classes.shorttitle}>Computer Vision Engineer</h4> */}
                     <div className={classes.cvheading_container}>
                       <WorkOutline/><h2 className={classes.cvheading}>Work Experience</h2>
-                      </div>
+                    </div>
 
                       <div className={classes.cvshorttitle_container}>
-                        <h3>June 2018 - Present</h3>
-                        <h3 style={{marginLeft:"70px"}}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
+                        <h3>Jun 2018 - Present</h3>
+                        <h3 style={{marginLeft:"80px"}}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
                       </div>
                       <div className={classes.cvdescription_container}>
                       <span className={classes.description}>
@@ -51,7 +51,7 @@ const Resume = () => {
 
                       <div className={classes.cvshorttitle_container}>
                         <h3>Jul 2016 - May 2018</h3>
-                        <h3 style={{marginLeft:"70px"}}>Research Assistant - DFKI, Saarbrücken</h3>
+                        <h3 style={{marginLeft:"65px"}}>Research Assistant - DFKI, Saarbrücken</h3>
                       </div>
                       <div className={classes.cvdescription_container}>
                         <span className={classes.description}>
@@ -64,6 +64,52 @@ const Resume = () => {
                         </ul>
                         </span>
                       </div>
+
+                      <div className={classes.cvshorttitle_container}>
+                        <h3>Oct 2015 - Feb 2016</h3>
+                        <h3 style={{marginLeft:"67px"}}>Research Assistant - Saarland University, Saarbrücken</h3>
+                      </div>
+                      <div className={classes.cvdescription_container}>
+                        <span className={classes.description}>
+                        Designed models in C++ for 3D printing
+                        </span>
+                      </div>
+
+                      <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
+                        <LocalLibrary/><h2 className={classes.cvheading}>Education</h2>
+                      </div>
+                        <div className={classes.cvshorttitle_container}>
+                          <h3>Oct 2014 - Mar 2018</h3>
+                          <h3 style={{marginLeft:"65px"}}>M.Sc.in Visual Computing, Saarland University, Germany</h3>
+                        </div>
+                        <div className={classes.cvdescription_container}>
+                          <span className={classes.description}>
+                          Focus On: Image Processing & Computer Vision, Advanced Image Analysis,
+                          Image Acquisition Methods, Computer Graphics, Partial Differential Equations, Calculus of Variations
+                          <br/>
+                          <i>Master Thesis: 3D Reconstruction and Visualization of Data from Clinical CT Images for Surgery Planning</i>
+                          </span>
+                        </div>
+
+                        <div className={classes.cvshorttitle_container}>
+                          <h3>Jul 2010 - Jul 2014</h3>
+                          <h3 style={{marginLeft:"75px"}}>Bachelor of Technology in Computer Science, ITM University, India</h3>
+                        </div>
+                        <div className={classes.cvdescription_container}>
+                          <span className={classes.description}>
+                          <i>Bachelor Thesis: Segmentation of Occluded Vehicles in Traffic Surveillance Videos</i>
+                          </span>
+                        </div>
+
+                        <div className={classes.cvshorttitle_container}>
+                          <h3>1999 - 2010</h3>
+                          <h3 style={{marginLeft:"137px"}}>High School Diploma, Modern Vidya Niketan, Faridabad, India</h3>
+                        </div>
+                        <div className={classes.cvdescription_container}>
+                          <span className={classes.description}>
+                          Advanced classes: Mathematics, Physics, Chemistry
+                          </span>
+                        </div>
 
 
 
