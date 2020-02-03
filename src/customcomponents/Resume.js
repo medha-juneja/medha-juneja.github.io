@@ -26,6 +26,7 @@ const Resume = () => {
                     <div className={classes.cvheading_container}>
                       <WorkOutline/><h2 className={classes.cvheading}>Work Experience</h2>
                       </div>
+
                       <div className={classes.cvshorttitle_container}>
                         <h3>June 2018 - Present</h3>
                         <h3 style={{marginLeft:"70px"}}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
@@ -46,7 +47,22 @@ const Resume = () => {
                         <li>Management of product backlog, refining user requirements and prioritizing based on business value (JIRA)</li>
                       </ul>
                       </span>
+                      </div>
 
+                      <div className={classes.cvshorttitle_container}>
+                        <h3>Jul 2016 - May 2018</h3>
+                        <h3 style={{marginLeft:"70px"}}>Research Assistant - DFKI, Saarbrücken</h3>
+                      </div>
+                      <div className={classes.cvdescription_container}>
+                        <span className={classes.description}>
+                        3D Mesh extraction from segmented CT Images for Surgery Planning GUI for BMBF funded project:&nbsp;
+                        <Link target="_blank" href="https://www.dfki.de/web/forschung/projekte-publikationen/projekte/projekt/iip-extrem/" color="inherit" rel="noopener" className={classes.cvlinks}>
+                         <i className={"fa fa-link"} style={{textDecoration:"none"}}/> Individualized Implants and Prosthetics for the Lower Extremities</Link>
+                        <ul>
+                          <li>High Quality Isosurface Extraction of Bone-Implant system and visualization in Unreal Engine (C++)</li>
+                          <li>HiWi Supervisor for GUI design</li>
+                        </ul>
+                        </span>
                       </div>
 
 

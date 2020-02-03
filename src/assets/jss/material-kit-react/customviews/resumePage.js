@@ -72,6 +72,14 @@ const resumePageStyle = {
     position:"relative"
   },
 
+  cvlinks:{
+    textDecoration: "underline",
+    color: "inherit",
+    "&:hover": {
+      color: "#00acc1 !important"
+    }
+  },
+
 profilebuttons: {
   fontSize: "15px",
   textTransform: "none",
