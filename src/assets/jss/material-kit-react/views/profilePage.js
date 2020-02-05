@@ -44,7 +44,7 @@ const profilePageStyle = {
     textDecoration: "none"
   },
   shorttitle:{
-    fontFamily:"Roboto",
+    fontFamily:'"Roboto" sans-serif',
     fontWeight:"400",
   },
 

@@ -6,7 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
 import Button from "components/CustomButtons/Button.js";
-import {WorkOutline, LocalLibrary, Code, Language} from "@material-ui/icons";
+import {WorkOutline, LocalLibrary, Code, Language, DateRange} from "@material-ui/icons";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
@@ -27,52 +27,65 @@ const Resume = () => {
                       <WorkOutline/><h2 className={classes.cvheading}>Work Experience</h2>
                     </div>
 
-                      <div className={classes.cvshorttitle_container}>
-                        <h3>Jun 2018 - Present</h3>
-                        <h3 style={{marginLeft:"80px"}}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
-                      </div>
-                      <div className={classes.cvdescription_container}>
-                      <span className={classes.description}>
-                      Development of short and long-term measures for Image Quality improvement of MR data:
-                        <ul>
-                          <li>Development of anonymized data retrieval service from PACS (Pynetdicom)</li>
-                          <li>Sequence management at the scanner (DICOM, DCMTK)</li>
-                          <li>Analysis and visualization of radiologists feedback on medneo's image quality (Python, MYSQL, Grafana)</li>
-                          <li>Real-time image artifact detection at the scanner using Entropy-based methods, SVM and CNN classification (Python)</li>
-                          <li>Supervision of students Master thesis projects</li>
+                      <div style={{textAlign:"left", marginLeft:"100px"}}>
+                        <h3 className={classes.cvshorttitle}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
+                        <div className={classes.cv_date}>
+                        <DateRange style={{marginRight:"20px"}}/><span>Jun 2018 - </span><span className={classes.tag}>Current</span>
+                        </div>
+                      <p className={classes.description}>
+                      Developed of short and long-term measures for image quality improvement of MR data:
+                        <ul style={{lineHeight: 1.7}}>
+                          <li>Developed GDPR compliant anonymized DICOM data retrieval service from PACS.</li>
+                          <li>Sequence management at Siemens and Philips scanners by analyzing DICOMs and performing DICOM messaging services using DCMTK.</li>
+                          <li>Analysis of radiologists feedback on medneo's image quality (according to each anatomy, scanning protocols and type of artifacts)
+                           and visualization of results in Grafana dashboard.</li>
+                          <li>Real-time image artifact detection at the scanner using Entropy-based methods, SVM and CNN classification.</li>
+                          <li>Supervision of students Master thesis projects.</li>
                         </ul>
                       Designed a proof-of-concept of immersive telepresence solution for physicians and technicians at the diagnostic centers.
-                      <ul>
-                        <li>Development of browser-based app with 360° video player that also allows voice communication (WebVR, WebRTC, HLS, RTMP)</li>
-                        <li>Management of product backlog, refining user requirements and prioritizing based on business value (JIRA)</li>
+                      <ul style={{lineHeight: 1.7}}>
+                        <li>Developed a browser-based app with 360° video player for Oculus Go that also allows voice communication between the users (WebVR, WebRTC, HLS, RTMP).</li>
+                        <li>Management of product backlog, refining user requirements and prioritizing tasks based on business value.</li>
                       </ul>
-                      </span>
+                      </p>
                       </div>
 
-                      <div className={classes.cvshorttitle_container}>
-                        <h3>Jul 2016 - May 2018</h3>
-                        <h3 style={{marginLeft:"65px"}}>Research Assistant - DFKI, Saarbrücken</h3>
-                      </div>
-                      <div className={classes.cvdescription_container}>
-                        <span className={classes.description}>
-                        3D Mesh extraction from segmented CT Images for Surgery Planning GUI for BMBF funded project:&nbsp;
+                      <br/>
+
+                      <div style={{textAlign:"left", marginLeft:"100px"}}>
+                        <h3 className={classes.cvshorttitle}>Research Assistant - Deutsche Forschungszentrum für Künstliche Intelligenz (DFKI) GmbH, Saarbrücken</h3>
+                        <div className={classes.cv_date}>
+                        <DateRange style={{marginRight:"20px"}}/><span>Jul 2016 - May 2018</span>
+                        </div>
+                        <p className={classes.description}>
+                        3D reconstruction of Bone-Implant System from segmented CT images in Unreal Engine for Surgery Planning for BMBF funded project:&nbsp;
                         <Link target="_blank" href="https://www.dfki.de/web/forschung/projekte-publikationen/projekte/projekt/iip-extrem/" color="inherit" rel="noopener" className={classes.cvlinks}>
                          <i className={"fa fa-link"} style={{textDecoration:"none"}}/> Individualized Implants and Prosthetics for the Lower Extremities</Link>
-                        <ul>
-                          <li>High Quality Isosurface Extraction of Bone-Implant system and visualization in Unreal Engine (C++)</li>
+                        <ul style={{lineHeight: 1.7}}>
+                          <li>Applied different surface extraction techniques such as Marching Cubes, Dual Contouring and several Mesh Smoothing algorithms.</li>
+                          <li>Integrated and worked with several libraries such as Boost, OpenSubdiv and VCGLib (MeshLab) in Unreal Engine.</li>
+                          <li>Integrated algorithm for extraction of connected components from isosurfaces. The algorithm can extract different mesh components
+                          - Implants, Tibia bone, Fibula bone and fracture.</li>
+                          <li>Created high quality visualization of meshes in Unreal Engine by creating lighting and shading models.</li>
+                          <li>Implemented several mesh evaluation metrics such as curvature evaluation, radii ratio, Hausdorff's distance and visualised in Unreal Engine.</li>
                           <li>HiWi Supervisor for GUI design</li>
                         </ul>
-                        </span>
+                        </p>
                       </div>
 
-                      <div className={classes.cvshorttitle_container}>
-                        <h3>Oct 2015 - Feb 2016</h3>
-                        <h3 style={{marginLeft:"67px"}}>Research Assistant - Saarland University, Saarbrücken</h3>
-                      </div>
-                      <div className={classes.cvdescription_container}>
-                        <span className={classes.description}>
-                        Designed models in C++ for 3D printing
-                        </span>
+                      <br/>
+
+                      <div style={{textAlign:"left", marginLeft:"100px"}}>
+                        <h3 className={classes.cvshorttitle}>Research Assistant -  Cluster of Excellence Multimodal Computing and Interaction (MMCI), Saarland University, Saarbrücken</h3>
+                        <div className={classes.cv_date}>
+                        <DateRange style={{marginRight:"20px"}}/><span>Oct 2015 - Feb 2016</span>
+                        </div>
+                        <p className={classes.description}>
+                          <ul style={{lineHeight: 1.7}}>
+                        <li>Designed models with varying Perlin noise in C++ for 3D printing to replicate given haptic results.</li>
+                        <li>Collected and evaluated results for the stiffness measure of the 3D printed models.</li>
+                          </ul>
+                        </p>
                       </div>
 
 

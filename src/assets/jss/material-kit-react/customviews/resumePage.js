@@ -13,10 +13,12 @@ const resumePageStyle = {
     }
   },
   description: {
-    marginLeft: "40px",
-    color: "#999",
+    textTransform:"none",
+    color: "#000",
     textAlign: "left",
-    marginLeft: "130px"
+    fontFamily: "Open Sans",
+    fontSize: "15px",
+    fontWeight: "300",
   },
 
   main: {
@@ -39,7 +41,7 @@ const resumePageStyle = {
     textDecoration: "none"
   },
   cvheading:{
-    fontFamily:"Roboto",
+    fontFamily:'"Roboto" sans-serif',
     fontWeight:"400",
     marginLeft: "10px"
   },
@@ -53,18 +55,30 @@ const resumePageStyle = {
     marginLeft: "270px"
 },
 
+cv_date:{
+  display:"flex",
+  flex: 1,
+  flexDirection: 'row',
+  alignItems: 'center',
+  color: "#00acc1",
+  fontFamily:"Roboto",
+  fontWeight: "400"
+},
 
   cvshorttitle_container:{
     display:"flex",
-    flex: 1,
-    flexDirection: 'row',
+    flex: "0 0 auto",
+    flexDirection: 'column',
     alignItems: 'center',
-    color: "#999",
-    marginLeft: "-110px",
-    fontFamily: "Roboto",
-    position: "relative",
     textAlign: "left"
   },
+
+cvshorttitle:{
+  color:"#757575",
+  fontFamily:"Roboto",
+  fontWeight: "400",
+  textShadow:"0.3px 0.3px 0.3px grey"
+},
 
   cvdescription_container:{
     display:"flex",
@@ -72,6 +86,8 @@ const resumePageStyle = {
     flexDirection: 'column',
     position:"relative"
   },
+
+
 
   cvlinks:{
     textDecoration: "underline",
@@ -106,7 +122,21 @@ profilebuttons: {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center"
-  }
+  },
+
+tag:{
+  backgroundColor:"#00acc1",
+  color:"#fff",
+  display:"inline-block",
+  paddingLeft:"8px",
+  paddingRight:"8px",
+  paddingTop:"2px",
+  paddingBottom:"2px",
+  textAlign:"center",
+  borderRadius:"4px",
+  marginLeft: "4px"
+}
+
 
 };
 
