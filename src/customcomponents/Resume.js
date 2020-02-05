@@ -6,7 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
 import Button from "components/CustomButtons/Button.js";
-import {WorkOutline, LocalLibrary, Code, Language, DateRange} from "@material-ui/icons";
+import {Code, Language, DateRange} from "@material-ui/icons";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
@@ -24,7 +24,7 @@ const Resume = () => {
                     <h1 className={classes.title}>CV</h1>
                     { /* <h4 className={classes.shorttitle}>Computer Vision Engineer</h4> */}
                     <div className={classes.cvheading_container}>
-                      <WorkOutline/><h2 className={classes.cvheading}>Work Experience</h2>
+                    <i class="fas fa-briefcase fa-2x"></i><h2 className={classes.cvheading}>Work Experience</h2>
                     </div>
 
                       <div style={{textAlign:"left", marginLeft:"100px"}}>
@@ -42,7 +42,7 @@ const Resume = () => {
                           <li>Real-time image artifact detection at the scanner using Entropy-based methods, SVM and CNN classification.</li>
                           <li>Supervision of students Master thesis projects.</li>
                         </ul>
-                      Designed a proof-of-concept of immersive telepresence solution for physicians and technicians at the diagnostic centers.
+                      Designed a proof-of-concept of immersive telepresence solution for physicians and technicians at the diagnostic centers:
                       <ul style={{lineHeight: 1.7}}>
                         <li>Developed a browser-based app with 360° video player for Oculus Go that also allows voice communication between the users (WebVR, WebRTC, HLS, RTMP).</li>
                         <li>Management of product backlog, refining user requirements and prioritizing tasks based on business value.</li>
@@ -90,41 +90,8 @@ const Resume = () => {
 
 
 
-                      <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
-                        <LocalLibrary/><h2 className={classes.cvheading}>Education</h2>
-                      </div>
-                        <div className={classes.cvshorttitle_container}>
-                          <h3>Oct 2014 - Mar 2018</h3>
-                          <h3 style={{marginLeft:"65px"}}>M.Sc.in Visual Computing, Saarland University, Germany</h3>
-                        </div>
-                        <div className={classes.cvdescription_container}>
-                          <span className={classes.description}>
-                          Focus On: Image Processing & Computer Vision, Advanced Image Analysis,
-                          Image Acquisition Methods, Computer Graphics, Partial Differential Equations, Calculus of Variations
-                          <br/>
-                          <i>Master Thesis: 3D Reconstruction and Visualization of Data from Clinical CT Images for Surgery Planning</i>
-                          </span>
-                        </div>
 
-                        <div className={classes.cvshorttitle_container}>
-                          <h3>Jul 2010 - Jul 2014</h3>
-                          <h3 style={{marginLeft:"75px"}}>Bachelor of Technology in Computer Science, ITM University, India</h3>
-                        </div>
-                        <div className={classes.cvdescription_container}>
-                          <span className={classes.description}>
-                          <i>Bachelor Thesis: Segmentation of Occluded Vehicles in Traffic Surveillance Videos</i>
-                          </span>
-                        </div>
 
-                        <div className={classes.cvshorttitle_container}>
-                          <h3>1999 - 2010</h3>
-                          <h3 style={{marginLeft:"137px"}}>High School Diploma, Modern Vidya Niketan, Faridabad, India</h3>
-                        </div>
-                        <div className={classes.cvdescription_container}>
-                          <span className={classes.description}>
-                          Advanced classes: Mathematics, Physics, Chemistry
-                          </span>
-                        </div>
 
 
                         <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>

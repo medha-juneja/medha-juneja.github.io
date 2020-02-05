@@ -36,7 +36,7 @@ const resumePageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "10px",
+    marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none"
   },
@@ -52,7 +52,8 @@ const resumePageStyle = {
     flexDirection: 'row',
     alignItems: 'center',
     color: "#00acc1",
-    marginLeft: "270px"
+    marginLeft: "270px",
+    paddingTop:"30px"
 },
 
 cv_date:{
