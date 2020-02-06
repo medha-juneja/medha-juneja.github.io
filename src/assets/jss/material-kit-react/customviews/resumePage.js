@@ -81,6 +81,17 @@ cvshorttitle:{
   textShadow:"0.3px 0.3px 0.3px grey"
 },
 
+cvuniversity:{
+  color:"#757575",
+  fontFamily:'"Roboto", sans-serif',
+  fontWeight: "400",
+},
+
+cvthesis:{
+  fontFamily: "Open Sans",
+  color:"#999"
+},
+
   cvdescription_container:{
     display:"flex",
     flex: "0 0 auto",

@@ -38,13 +38,13 @@ const ProfilePic = () => {
                     <span className={classes.margin5Left}>Berlin</span>
                     </div>
 
-                    <Button target="_blank" href="https://www.linkedin.com/in/medha-juneja/" justIcon link>
+                    <Button target="_blank" href="https://www.linkedin.com/in/medha-juneja/" justIcon link className={classes.buttonlinks}>
                       <i className={"fab fa-linkedin"} />
                     </Button>
-                    <Button target="_blank"  href="https://www.xing.com/profile/Medha_Juneja/" justIcon link>
+                    <Button target="_blank"  href="https://www.xing.com/profile/Medha_Juneja/" justIcon link className={classes.buttonlinks}>
                       <i className={"fab fa-xing"} />
                     </Button>
-                    <Button target="_blank" href="https://github.com/medha-juneja" justIcon link>
+                    <Button target="_blank" href="https://github.com/medha-juneja" justIcon link className={classes.buttonlinks}>
                       <i className={"fab fa-github"} />
                     </Button>
 

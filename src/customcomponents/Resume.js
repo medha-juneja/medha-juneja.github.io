@@ -60,7 +60,7 @@ const Resume = () => {
                         <p className={classes.description}>
                         3D reconstruction of Bone-Implant System from segmented CT images in Unreal Engine for Surgery Planning for BMBF funded project:&nbsp;
                         <Link target="_blank" href="https://www.dfki.de/web/forschung/projekte-publikationen/projekte/projekt/iip-extrem/" color="inherit" rel="noopener" className={classes.cvlinks}>
-                         <i className={"fa fa-link"} style={{textDecoration:"none"}}/> Individualized Implants and Prosthetics for the Lower Extremities</Link>
+                         <i class="fas fa-external-link-alt" style={{textDecoration:"none"}}/> Individualized Implants and Prosthetics for the Lower Extremities</Link>
                         <ul style={{lineHeight: 1.7}}>
                           <li>Applied different surface extraction techniques such as Marching Cubes, Dual Contouring and several Mesh Smoothing algorithms.</li>
                           <li>Integrated and worked with several libraries such as Boost, OpenSubdiv and VCGLib (MeshLab) in Unreal Engine.</li>

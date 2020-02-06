@@ -80,7 +80,14 @@ profilebuttons: {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center"
+  },
+
+buttonlinks: {
+  "&:hover": {
+    color: "#00acc1 !important"
   }
+}
+
 
 };
 
