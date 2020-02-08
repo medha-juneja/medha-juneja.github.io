@@ -12,12 +12,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      <Header color="info" rightLinks={<RightHeaderLinks />} leftLinks={<LeftHeaderLinks />}></Header>
-      <ProfilePic />
-      <SkillSet />
-      <Resume />
-      <Education />
-      <Patents />
+        <Header color="info" rightLinks={<RightHeaderLinks />} leftLinks={<LeftHeaderLinks />}></Header>
+        <ProfilePic />
+        <SkillSet />
+        <Resume />
+        <Education />
+        <Patents />
       </div>
 
     )
