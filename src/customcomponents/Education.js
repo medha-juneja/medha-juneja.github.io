@@ -24,7 +24,7 @@ const Education = () => {
                         <i class="fas fa-graduation-cap fa-2x"></i><h2 className={classes.cvheading}>Education</h2>
                       </div>
 
-                        <div style={{textAlign:"left", marginLeft:"100px"}}>
+                        <div style={{textAlign:"left", marginLeft:"70px"}}>
                           <h3 className={classes.cvshorttitle}>M.Sc.in Visual Computing</h3>
                           <h4 className={classes.cvuniversity}>Saarland University, Germany</h4>
                           <div className={classes.cv_date}>
@@ -43,7 +43,7 @@ const Education = () => {
 
                         <br/>
 
-                          <div style={{textAlign:"left", marginLeft:"100px"}}>
+                          <div style={{textAlign:"left", marginLeft:"70px"}}>
                             <h3 className={classes.cvshorttitle}>Bachelor of Technology in Computer Science and Engineering</h3>
                             <h4 className={classes.cvuniversity}>ITM University, India</h4>
                             <div className={classes.cv_date}>
@@ -61,7 +61,7 @@ const Education = () => {
 
                         <br/>
 
-                          <div style={{textAlign:"left", marginLeft:"100px"}}>
+                          <div style={{textAlign:"left", marginLeft:"70px"}}>
                           <h3 className={classes.cvshorttitle}>High School Diploma</h3>
                               <h4 className={classes.cvuniversity}>Modern Vidya Niketan, Faridabad, India</h4>
                               <div className={classes.cv_date}>

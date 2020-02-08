@@ -5,10 +5,7 @@ import classNames from 'classnames';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
-import Button from "components/CustomButtons/Button.js";
-import {Code, Language, DateRange} from "@material-ui/icons";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
+import {DateRange} from "@material-ui/icons";
 
 
 const useStyles = makeStyles(styles);
@@ -27,7 +24,7 @@ const Resume = () => {
                     <i class="fas fa-briefcase fa-2x"></i><h2 className={classes.cvheading}>Work Experience</h2>
                     </div>
 
-                      <div style={{textAlign:"left", marginLeft:"100px"}}>
+                      <div style={{textAlign:"left", marginLeft:"70px"}}>
                         <h3 className={classes.cvshorttitle}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
                         <div className={classes.cv_date}>
                         <DateRange style={{marginRight:"20px"}}/><span>Jun 2018 - </span><span className={classes.tag}>Current</span>
@@ -52,7 +49,7 @@ const Resume = () => {
 
                       <br/>
 
-                      <div style={{textAlign:"left", marginLeft:"100px"}}>
+                      <div style={{textAlign:"left", marginLeft:"70px"}}>
                         <h3 className={classes.cvshorttitle}>Research Assistant - Deutsche Forschungszentrum für Künstliche Intelligenz (DFKI) GmbH, Saarbrücken</h3>
                         <div className={classes.cv_date}>
                         <DateRange style={{marginRight:"20px"}}/><span>Jul 2016 - May 2018</span>
@@ -75,7 +72,7 @@ const Resume = () => {
 
                       <br/>
 
-                      <div style={{textAlign:"left", marginLeft:"100px"}}>
+                      <div style={{textAlign:"left", marginLeft:"70px"}}>
                         <h3 className={classes.cvshorttitle}>Research Assistant -  Cluster of Excellence Multimodal Computing and Interaction (MMCI), Saarland University, Saarbrücken</h3>
                         <div className={classes.cv_date}>
                         <DateRange style={{marginRight:"20px"}}/><span>Oct 2015 - Feb 2016</span>
@@ -87,62 +84,6 @@ const Resume = () => {
                           </ul>
                         </p>
                       </div>
-
-
-
-
-
-
-
-                        <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
-                          <Code/><h2 className={classes.cvheading}>Technical Skills</h2>
-                        </div>
-                          <Button color="info" size ="lg" round>C++</Button>
-                          <Button color="info" size ="lg" round>Python</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>Javascript</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>C#</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>R</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>SQL</Button>
-                          <br/>
-                          <Button color="info" size ="lg" round>DICOM</Button>
-                          <Button color="info" size ="lg" round>DCMTK</Button>
-                          <Button color="info" size ="lg" round>VTK</Button>
-                          <Button color="info" size ="lg" round>ITK</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>Unreal Engine</Button>
-                          <br/>
-                          <Button color="info" size ="lg" round>OpenCV</Button>
-                          <Button color="info" size ="lg" round>Eigen</Button>
-                          <Button color="info" size ="lg" round>VCGLib</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size="lg" round>Boost</Button>
-                          <br/>
-                          <Button color="info" size ="lg" round>Git</Button>
-                          <Button color="info" size ="lg" round>SVN</Button>
-                          <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>Docker</Button>
-                          <br/>
-                          <Button color="info" size ="lg" round>SCRUM</Button>
-                          <Button color="info" size ="lg" round>Kanban</Button>
-                          <Button color="info" size ="lg" round>JIRA</Button>
-                          <Button color="info" size ="lg" round>Trello</Button>
-
-
-                          <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
-                            <Language/><h2 className={classes.cvheading}>Language Skills</h2>
-                          </div>
-                            <Button color="info" size ="lg" round>English</Button>
-                            <Button style={{backgroundColor:"#5ac4d1"}} size ="lg" round>German (A2)</Button>
-
-                          <div className={classes.cvheading_container} style={{paddingTop:"30px"}}>
-                            <i class="fa fa-certificate" aria-hidden="true"/><h2 className={classes.cvheading}>Patents</h2>
-                          </div>
-                            <div className={classes.cvdescription_container}>
-                              <span style={{color: "#999", fontSize:"17px", textAlign:"left"}}>
-                              <ul>
-                                <li><b>An immersive telepresence system for the radiological workflow</b>, DE, Submitted in April 2019.</li>
-                                <li><b>Technique for performing a quality assessment for a medical image</b>, DE, Submitted in January 2019.</li>
-                                <li><b>Technique for configuring a medical imaging device,</b>, DE, Submitted in January 2019.</li>
-                              </ul>
-                              </span>
-                            </div>
 
                 </div>
               </GridItem>

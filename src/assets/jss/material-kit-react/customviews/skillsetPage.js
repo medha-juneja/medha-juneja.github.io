@@ -1,13 +1,14 @@
 import { container, title, infoColor } from "assets/jss/material-kit-react.js";
 
-const resumePageStyle = {
+const skillsetPageStyle = {
   container,
-  resume: {
+  skillset: {
     textAlign: "center",
     "& img": {
       maxWidth: "800px",
       width: "100%",
       margin: "0 auto",
+      marginTop: "110px",
       transform: "translate3d(0, -50%, 0)"
     }
   },
@@ -151,4 +152,4 @@ tag:{
 
 };
 
-export default resumePageStyle;
+export default skillsetPageStyle;
