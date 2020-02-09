@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import classNames from 'classnames';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
+import styles from "assets/jss/material-kit-react/customviews/customStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -15,16 +15,16 @@ const Patents = () => {
             <GridContainer justify="center">
               <GridItem xs={12} sm={6} md={8}>
                 { /* Patents and Pubs start */}
-                <div className={classes.resume}>
+                <div className={classes.textCenter}>
                     { /* Patents main heading*/}
-                    <div className={classes.cvheading_container}>
+                    <div className={classes.heading_container}>
                       <i class="fas fa-certificate fa-2x"></i>
-                      <h2 className={classes.cvheading}>Patents and Publications</h2>
+                      <h2 className={classes.heading}>Patents and Publications</h2>
                     </div>
                       { /* Patents and Pubs subheading container start */}
                     <div style={{textAlign:"left", marginLeft:"70px"}}>
                       { /* Patents heading */}
-                      <h3 className={classes.cvshorttitle}>Patents</h3>
+                      <h3 className={classes.subheading}>Patents</h3>
                       { /* Description start */}
                       <p className={classes.description}>
                           { /* Patents description start */}
@@ -37,7 +37,7 @@ const Patents = () => {
                       <br/>
 
                         { /* Publications heading */}
-                        <h3 className={classes.cvshorttitle}>Publications</h3>
+                        <h3 className={classes.subheading}>Publications</h3>
                           { /* Publications description start */}
                           <ul style={{lineHeight: 1.7}}>
                             <li>M. Juneja, M. Bode-Hofmann, K. S. Haong, S. Meißner, V. Merkel, J. Vogt, N.Wilke, A. Wolff, and T. Hartkens,

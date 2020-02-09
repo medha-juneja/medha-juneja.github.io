@@ -19,9 +19,6 @@ const Resume = () => {
               <GridItem xs={12} sm={6} md={8}>
                 { /* Resume start */}
                 <div className={classes.textCenter}>
-                    { /* CV Title */}
-                    <h1 className={classes.title}>CV</h1>
-
                     { /* Work Experience heading */}
                     <div className={classes.heading_container}>
                       <i class="fas fa-briefcase fa-2x"></i>

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import classNames from 'classnames';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
+import styles from "assets/jss/material-kit-react/customviews/customStyle.js";
 import {DateRange} from "@material-ui/icons";
 
 
@@ -17,11 +17,11 @@ const Education = () => {
             <GridContainer justify="center">
               <GridItem xs={12} sm={6} md={8}>
                 { /* Education start */}
-                <div className={classes.resume}>
+                <div className={classes.textCenter}>
                       { /* Education title start */}
-                      <div className={classes.cvheading_container}>
+                      <div className={classes.heading_container}>
                         <i class="fas fa-graduation-cap fa-2x"></i>
-                        <h2 className={classes.cvheading}>Education</h2>
+                        <h2 className={classes.heading}>Education</h2>
                       </div>
                       { /* Education title end */}
 
@@ -29,20 +29,20 @@ const Education = () => {
                         <div style={{textAlign:"left", marginLeft:"70px"}}>
 
                           { /* M.Sc. title */}
-                          <h3 className={classes.cvshorttitle}>M.Sc.in Visual Computing</h3>
+                          <h3 className={classes.subheading}>M.Sc.in Visual Computing</h3>
                           { /* University */}
-                          <h4 className={classes.cvuniversity}>Saarland University, Germany</h4>
+                          <h4 className={classes.heading3}>Saarland University, Germany</h4>
                           { /* Calendar and Date */}
-                          <div className={classes.cv_date}>
+                          <div className={classes.daterange}>
                             <DateRange style={{marginRight:"20px"}}/><span>Oct 2014 - Mar 2018</span>
                           </div>
                           { /* M.Sc. description start */}
                           <p className={classes.description}>
                             { /* Msc thesis */}
-                            <h4 className={classes.cvthesis}>Master Thesis:</h4>
+                            <h4 className={classes.heading4}>Master Thesis:</h4>
                             Iso-Surface Extraction of Clinical CT Images for Surgery Planning
                             { /* Msc courses */}
-                            <h4 className={classes.cvthesis}>Courses:</h4>
+                            <h4 className={classes.heading4}>Courses:</h4>
                             Computer Graphics ( Check out the Ray Tracer project here), Image Processing and Computer Vision,
                             Image Acquisition Methods, Advanced Image Analysis, Image Compression, Perception in Computer Graphics,
                             Seminar: Groundbreaking Ideas in Computer Vision, Seminar: Perception, Display and Fabrication,
@@ -57,22 +57,22 @@ const Education = () => {
                       { /* B.Tech degree start */}
                         <div style={{textAlign:"left", marginLeft:"70px"}}>
                           { /* B.Tech degree title */}
-                          <h3 className={classes.cvshorttitle}>Bachelor of Technology in Computer Science and Engineering</h3>
+                          <h3 className={classes.subheading}>Bachelor of Technology in Computer Science and Engineering</h3>
                           { /* University */}
-                          <h4 className={classes.cvuniversity}>ITM University, India</h4>
+                          <h4 className={classes.heading3}>ITM University, India</h4>
                           {
                            /* Calendar and Date */}
-                          <div className={classes.cv_date}>
+                          <div className={classes.daterange}>
                             <DateRange style={{marginRight:"20px"}}/><span>Jul 2010 - Jul 2014</span>
                           </div>
 
                           { /* B.Tech degree description start*/}
                           <p className={classes.description}>
                             { /* B.Tech thesis*/}
-                            <h4 className={classes.cvthesis}>Bachelor Thesis:</h4>
+                            <h4 className={classes.heading4}>Bachelor Thesis:</h4>
                             Segmentation of Occluded Vehicles in Traffic Surveillance Videos
                             { /* B.Tech courses */}
-                            <h4 className={classes.cvthesis}>Courses:</h4>
+                            <h4 className={classes.heading4}>Courses:</h4>
                             Object Oriented Programming, Database Management System, Computer Graphics,
                               Shell Programming, Software Engineering and Programming Language Concepts,
                               Digital Image Analysis and Statistical Methods.
@@ -86,11 +86,11 @@ const Education = () => {
                       { /* High school degree start*/}
                       <div style={{textAlign:"left", marginLeft:"70px"}}>
                         { /* High School degree title*/}
-                        <h3 className={classes.cvshorttitle}>High School Diploma</h3>
+                        <h3 className={classes.subheading}>High School Diploma</h3>
                         { /* University */}
-                        <h4 className={classes.cvuniversity}>Modern Vidya Niketan, Faridabad, India</h4>
+                        <h4 className={classes.heading3}>Modern Vidya Niketan, Faridabad, India</h4>
                           { /* Calendar and date */}
-                          <div className={classes.cv_date}>
+                          <div className={classes.daterange}>
                             <DateRange style={{marginRight:"20px"}}/><span>1999 - 2010</span>
                           </div>
                           { /* High School description */}

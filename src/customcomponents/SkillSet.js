@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import classNames from 'classnames';
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import styles from "assets/jss/material-kit-react/customviews/skillsetPage.js";
+import styles from "assets/jss/material-kit-react/customviews/customStyle.js";
 import Button from "components/CustomButtons/Button.js";
 import {Code, Language} from "@material-ui/icons";
 import NavPills from "components/NavPills/NavPills.js";
@@ -21,9 +21,9 @@ const SkillSet = () => {
               { /* Skill Set start */}
 
                 { /* Skillset title */}
-                <div className={classes.cvheading_container}>
+                <div className={classes.heading_container}>
                   <i class="fas fa-cogs fa-2x"></i>
-                  <h2 className={classes.cvheading}>My Skillset</h2>
+                  <h2 className={classes.heading}>My Skillset</h2>
                 </div>
                   { /* Navigation pills start */}
                 <NavPills alignCenter color="info"

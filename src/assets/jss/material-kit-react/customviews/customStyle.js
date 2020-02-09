@@ -63,6 +63,17 @@ const customStyle = {
       textShadow:"0.3px 0.3px 0.3px grey"
     },
 
+    heading3:{
+      color:"#757575",
+      fontFamily:'"Roboto", sans-serif',
+      fontWeight: "400",
+    },
+
+    heading4:{
+      fontFamily: "Open Sans",
+      color:"#999"
+    },
+
     daterange:{
       display:"flex",
       flex: 1,
@@ -113,7 +124,14 @@ const customStyle = {
         "&:hover": {
           color: "#00acc1 !important"
         }
-      }
+      },
+
+  // Menu Component Styles
+    // For aligning tab buttons
+    navWrapper: {
+      margin: "20px auto 50px auto",
+      textAlign: "center"
+    }
 
 };
 
