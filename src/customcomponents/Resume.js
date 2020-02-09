@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Link from '@material-ui/core/Link';
 import classNames from 'classnames';
 import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import styles from "assets/jss/material-kit-react/customviews/resumePage.js";
-import {DateRange} from "@material-ui/icons";
+import GridItem from 'components/Grid/GridItem.js';
+import styles from 'assets/jss/material-kit-react/customviews/customStyle.js';
+import {DateRange} from '@material-ui/icons';
 
 
 const useStyles = makeStyles(styles);
@@ -18,31 +18,29 @@ const Resume = () => {
             <GridContainer justify="center">
               <GridItem xs={12} sm={6} md={8}>
                 { /* Resume start */}
-                <div className={classes.resume}>
+                <div className={classes.textCenter}>
                     { /* CV Title */}
                     <h1 className={classes.title}>CV</h1>
 
                     { /* Work Experience heading */}
-                    <div className={classes.cvheading_container}>
+                    <div className={classes.heading_container}>
                       <i class="fas fa-briefcase fa-2x"></i>
-                      <h2 className={classes.cvheading}>Work Experience</h2>
+                      <h2 className={classes.heading}>Work Experience</h2>
                     </div>
 
                     { /* Medneo position start*/}
 
                     <div style={{textAlign:"left", marginLeft:"70px"}}>
                       { /* Image processing position title*/}
-                      <h3 className={classes.cvshorttitle}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
+                      <h3 className={classes.subheading}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
                       { /* Calender and Date */}
-                      <div className={classes.cv_date}>
-
+                      <div className={classes.daterange}>
                         <DateRange style={{marginRight:"20px"}}/>
                         <span>Jun 2018 - </span><span className={classes.tag}>Current</span>
-
                       </div>
+
                       { /* Medneo position description */}
                       <p className={classes.description}>
-
                         { /* qloop desciption */}
                         Developed of short and long-term measures for image quality improvement of MR data:
                           <ul style={{lineHeight: 1.7}}>
@@ -60,8 +58,8 @@ const Resume = () => {
                           <li>Developed a browser-based app with 360° video player for Oculus Go that also allows voice communication between the users (WebVR, WebRTC, HLS, RTMP).</li>
                           <li>Management of product backlog, refining user requirements and prioritizing tasks based on business value.</li>
                         </ul>
-
                       </p>
+
                       </div>
                       { /* Medneo position end*/}
 
@@ -71,12 +69,12 @@ const Resume = () => {
                       <div style={{textAlign:"left", marginLeft:"70px"}}>
 
                         { /* Research Assistant position title */}
-                        <h3 className={classes.cvshorttitle}>
+                        <h3 className={classes.subheading}>
                           Research Assistant - Deutsche Forschungszentrum für Künstliche Intelligenz (DFKI) GmbH, Saarbrücken
                         </h3>
 
                         { /* Calendar icon and date */}
-                        <div className={classes.cv_date}>
+                        <div className={classes.daterange}>
                           <DateRange style={{marginRight:"20px"}}/><span>Jul 2016 - May 2018</span>
                         </div>
 
@@ -88,8 +86,8 @@ const Resume = () => {
 
                           { /* Link to IIP=EXTREM project website*/}
                           <Link target="_blank" href="https://www.dfki.de/web/forschung/projekte-publikationen/projekte/projekt/iip-extrem/"
-                          color="inherit" rel="noopener" className={classes.cvlinks}>
-                          <i class="fas fa-external-link-alt" style={{textDecoration:"none"}}/>
+                          color="inherit" rel="noopener" className={classes.themelinks}>
+                          <i class="fas fa-external-link-alt" />
                           Individualized Implants and Prosthetics for the Lower Extremities
                           </Link>
 
@@ -112,10 +110,10 @@ const Resume = () => {
                       <div style={{textAlign:"left", marginLeft:"70px"}}>
 
                         { /* MMCI position title*/}
-                        <h3 className={classes.cvshorttitle}>Research Assistant -  Cluster of Excellence Multimodal Computing and Interaction (MMCI), Saarland University, Saarbrücken</h3>
+                        <h3 className={classes.subheading}>Research Assistant -  Cluster of Excellence Multimodal Computing and Interaction (MMCI), Saarland University, Saarbrücken</h3>
 
                         { /* Calendar icon and date*/}
-                        <div className={classes.cv_date}>
+                        <div className={classes.daterange}>
                           <DateRange style={{marginRight:"20px"}}/><span>Oct 2015 - Feb 2016</span>
                         </div>
 
@@ -131,7 +129,7 @@ const Resume = () => {
 
 
                 </div>
-                { /* Resume end*/}    
+                { /* Resume end*/}
               </GridItem>
             </GridContainer>
         </div>

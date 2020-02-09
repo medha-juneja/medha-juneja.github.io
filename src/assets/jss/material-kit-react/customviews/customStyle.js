@@ -39,6 +39,47 @@ const customStyle = {
       fontSize: "15px",
       fontWeight: "300",
     },
+
+    heading_container: {
+      display:"flex",
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+      color: "#00acc1",
+      marginLeft: "270px",
+      paddingTop:"30px"
+    },
+
+    heading:{
+      fontFamily:'"Roboto" sans-serif',
+      fontWeight:"400",
+      marginLeft: "10px"
+    },
+
+    subheading:{
+      color:"#757575",
+      fontFamily:"Roboto",
+      fontWeight: "400",
+      textShadow:"0.3px 0.3px 0.3px grey"
+    },
+
+    daterange:{
+      display:"flex",
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+      color: "#00acc1",
+      fontFamily:"Roboto",
+      fontWeight: "400"
+    },
+
+    themelinks:{
+      textDecoration: "underline",
+      color: "inherit",
+      "&:hover": {
+        color: "#00acc1 !important"
+      }
+    },
     // Profile Component Styles
       // Container for Profile text and image
       profile: {
@@ -56,6 +97,7 @@ const customStyle = {
         name: {
           marginTop: "-110px"
         },
+
       // Container for Details in Profile Component
       profileDetails_container: {
           display:"flex",
