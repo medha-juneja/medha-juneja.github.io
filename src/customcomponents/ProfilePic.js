@@ -1,11 +1,11 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import styles from 'assets/jss/material-kit-react/customviews/customStyle.js';
 import profilepic from 'assets/img/cvpicgrey.jpg';
-import Button from "components/CustomButtons/Button.js";
+import Button from 'components/CustomButtons/Button.js';
 
 
 const useStyles = makeStyles(styles);
@@ -18,7 +18,7 @@ const ProfilePic = () => {
       classes.imgFluid
     );
     return(
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainRaised)} style={{marginTop:"-20px"}}>
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
@@ -35,25 +35,25 @@ const ProfilePic = () => {
                       { /* Name */}
                       <h1 className={classes.title}>Medha Juneja</h1>
 
-                      <div className={classNames(classes.iconandtext, classes.profilebuttons)}>
+                      <div className={classes.profileDetails_container}>
                         { /* EmailID */}
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span className={classes.margin5Left}>medhaj001@gmail.com</span>
+                        <span style={{marginLeft:"5px"}}>medhaj001@gmail.com</span>
                         { /* Location */}
-                        <i className={classNames("fa fa-map-marker", classes.margin15Left)} />
-                        <span className={classes.margin5Left}>Berlin</span>
+                        <i class="fa fa-map-marker" style={{marginLeft:"15px"}} />
+                        <span  style={{marginLeft:"5px"}}>Berlin</span>
 
                       </div>
                       { /* linkedin profile link */}
-                      <Button target="_blank" href="https://www.linkedin.com/in/medha-juneja/" justIcon link className={classes.buttonlinks}>
+                      <Button target="_blank" href="https://www.linkedin.com/in/medha-juneja/" justIcon link className={classes.profileDetails_links}>
                         <i className={"fab fa-linkedin"} />
                       </Button>
                       { /* xing profile link */}
-                      <Button target="_blank"  href="https://www.xing.com/profile/Medha_Juneja/" justIcon link className={classes.buttonlinks}>
+                      <Button target="_blank"  href="https://www.xing.com/profile/Medha_Juneja/" justIcon link className={classes.profileDetails_links}>
                         <i className={"fab fa-xing"} />
                       </Button>
                       { /* github repo link */}
-                      <Button target="_blank" href="https://github.com/medha-juneja" justIcon link className={classes.buttonlinks}>
+                      <Button target="_blank" href="https://github.com/medha-juneja" justIcon link className={classes.profileDetails_links}>
                         <i className={"fab fa-github"} />
                       </Button>
                   </div>
