@@ -10,7 +10,7 @@ const useStyles = makeStyles(styles);
 const Patents = () => {
   const classes = useStyles();
     return(
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div id="patents" className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={6} md={8}>

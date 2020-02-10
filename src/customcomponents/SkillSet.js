@@ -13,7 +13,7 @@ const useStyles = makeStyles(styles);
 const SkillSet = () => {
   const classes = useStyles();
     return(
-      <div className={classNames(classes.main, classes.mainRaised)} >
+      <div id="skills" className={classNames(classes.main, classes.mainRaised)} >
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
