@@ -7,7 +7,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
 import { Apps, Email, Home, ListAlt } from "@material-ui/icons";
-
+import {Link} from "react-scroll";
 // core components
 import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
@@ -20,6 +20,7 @@ export function LeftHeaderLinks(props) {
     // Left links start
     <List className={classes.list}>
       { /* Home Link start */}
+      <Link activeClass="active" to="profilepic"  spy={true} smooth={true} offset={-70} duration= {500} >
       <ListItem className={classes.listItem}>
         <Button
           href="#"
@@ -32,9 +33,11 @@ export function LeftHeaderLinks(props) {
           Home
         </Button>
       </ListItem>
+    </Link>
       { /* Home Link end */}
 
       { /* Resume Link start */}
+      <Link activeClass="active" to="workex"  spy={true} smooth={true} offset={-70} duration= {500} >
       <ListItem className={classes.listItem}>
         <Button
           href="#"
@@ -47,6 +50,7 @@ export function LeftHeaderLinks(props) {
           Resume
         </Button>
       </ListItem>
+    </Link>
       { /* Resume Link end */}
 
     </List>

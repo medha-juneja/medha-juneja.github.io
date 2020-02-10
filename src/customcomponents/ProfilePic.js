@@ -18,7 +18,7 @@ const ProfilePic = () => {
       classes.imgFluid
     );
     return(
-      <div className={classNames(classes.main, classes.mainRaised)} style={{marginTop:"-20px"}}>
+      <div id="profilepic" className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
@@ -26,8 +26,8 @@ const ProfilePic = () => {
                 <div className={classes.profile}>
 
                   { /* Profile Picture */}
-                  <div>
-                    <img src={profilepic} className={imageClasses} alt="Medha Juneja"/>
+                  <div style={{paddingTop:"120px"}}>
+                    <img  src={profilepic} className={imageClasses} alt="Medha Juneja"/>
                   </div>
 
 

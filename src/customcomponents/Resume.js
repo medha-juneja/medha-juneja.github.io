@@ -13,7 +13,7 @@ const useStyles = makeStyles(styles);
 const Resume = () => {
   const classes = useStyles();
     return(
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div id="workex" className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={6} md={8}>
