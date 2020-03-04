@@ -17,9 +17,11 @@ const Patents = () => {
                 { /* Patents and Pubs start */}
                 <div className={classes.textCenter}>
                     { /* Patents main heading*/}
-                    <div className={classes.heading_container}>
-                      <i class="fas fa-certificate fa-2x"></i>
-                      <h2 className={classes.heading}>Patents and Publications</h2>
+                    <div className={classes.alignHeading_container}>
+                      <div className={classes.alignRow_container}>
+                        <i class="fas fa-certificate fa-2x" style={{color:"#00acc1"}}></i>
+                        <h2 className={classes.heading}>Patents & Publications</h2>
+                      </div>
                     </div>
                       { /* Patents and Pubs subheading container start */}
                     <div style={{textAlign:"left", marginLeft:"70px"}}>
