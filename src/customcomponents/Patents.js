@@ -24,7 +24,7 @@ const Patents = () => {
                       </div>
                     </div>
                       { /* Patents and Pubs subheading container start */}
-                    <div style={{textAlign:"left", marginLeft:"70px"}}>
+                    <div style={{textAlign:"left"}}>
                       { /* Patents heading */}
                       <h3 className={classes.subheading}>Patents</h3>
                       { /* Description start */}
