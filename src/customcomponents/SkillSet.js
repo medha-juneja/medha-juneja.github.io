@@ -21,9 +21,11 @@ const SkillSet = () => {
               { /* Skill Set start */}
 
                 { /* Skillset title */}
+              <div className={classes.aligncontainer}>
                 <div className={classes.heading_container}>
                   <i class="fas fa-cogs fa-2x"></i>
                   <h2 className={classes.heading}>My Skillset</h2>
+                </div>
                 </div>
                   { /* Navigation pills start */}
                 <NavPills alignCenter color="info"

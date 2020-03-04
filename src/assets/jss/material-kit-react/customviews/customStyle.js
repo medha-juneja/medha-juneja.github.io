@@ -40,14 +40,18 @@ const customStyle = {
       fontWeight: "300",
     },
 
+    aligncontainer: {
+      margin: "1.75rem 0 0.875rem",
+      display:"inline-block",
+      paddingTop:"30px"
+    },
+
     heading_container: {
       display:"flex",
       flex: 1,
       flexDirection: 'row',
       alignItems: 'center',
-      color: "#00acc1",
-      marginLeft: "270px",
-      paddingTop:"30px"
+      color: "#00acc1",      
     },
 
     heading:{
