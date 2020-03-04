@@ -7,7 +7,6 @@ import styles from "assets/jss/material-kit-react/customviews/customStyle.js";
 import Button from "components/CustomButtons/Button.js";
 import {Code, Language} from "@material-ui/icons";
 import NavPills from "components/NavPills/NavPills.js";
-import { infoColor } from '../assets/jss/material-kit-react';
 
 const useStyles = makeStyles(styles);
 
@@ -24,7 +23,7 @@ const SkillSet = () => {
                 { /* Skillset title */}
               <div className={classes.alignHeading_container}>
                 <div className={classes.alignRow_container}>
-                  <i class="fas fa-cogs fa-2x" style={{color:infoColor}}></i>
+                  <i class="fas fa-cogs fa-2x" style={{color:"#00acc1"}}></i>
                   <h2 className={classes.heading}>My Skillset</h2>
                 </div>
               </div>

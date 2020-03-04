@@ -3,6 +3,7 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const customStyle = {
   container,
+  infoColor,
   main: {
     background: "#FFFFFF",
     position: "relative",

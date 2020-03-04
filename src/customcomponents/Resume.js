@@ -20,9 +20,11 @@ const Resume = () => {
                 { /* Resume start */}
                 <div className={classes.textCenter}>
                     { /* Work Experience heading */}
-                    <div className={classes.heading_container}>
-                      <i class="fas fa-briefcase fa-2x"></i>
-                      <h2 className={classes.heading}>Work Experience</h2>
+                    <div className={classes.alignHeading_container}>
+                      <div className={classes.alignRow_container}>
+                        <i class="fas fa-briefcase fa-2x" style={{color:"#00acc1"}}></i>
+                        <h2 className={classes.heading}>Work Experience</h2>
+                      </div>
                     </div>
 
                     { /* Medneo position start*/}
