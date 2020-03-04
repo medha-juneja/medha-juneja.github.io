@@ -1,9 +1,9 @@
-import { container, title } from "assets/jss/material-kit-react.js";
+import { container, title, infoColor } from "assets/jss/material-kit-react.js";
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const customStyle = {
   container,
-
+  infoColor,
   main: {
     background: "#FFFFFF",
     position: "relative",
@@ -40,20 +40,34 @@ const customStyle = {
       fontWeight: "300",
     },
 
-    heading_container: {
+    // Container for aligning things in a column 
+    alignColumn_container: {
+      display:"flex",
+      flex: 1,
+      flexDirection: 'column',
+      alignItems: 'center'
+    },
+
+    // Container for aligning things in a row 
+    alignRow_container: {
       display:"flex",
       flex: 1,
       flexDirection: 'row',
       alignItems: 'center',
-      color: "#00acc1",
-      marginLeft: "270px",
+    },
+
+    // Container for aligning Component headings the same way as title in Profile 
+    alignHeading_container: {
+      margin: "1.75rem 0 0.875rem",
+      display:"inline-block",
       paddingTop:"30px"
     },
 
     heading:{
       fontFamily:'"Roboto" sans-serif',
       fontWeight:"400",
-      marginLeft: "10px"
+      marginLeft: "10px",
+      color: infoColor
     },
 
     subheading:{
@@ -109,25 +123,14 @@ const customStyle = {
           marginTop: "-110px"
         },
 
-      // Container for aligning Profile Details in a column for Profile Component
 
-      alignColumn_container: {
-        display:"flex",
-        flex: 1,
-        flexDirection: 'column',
-        alignItems: 'center'
-      },
 
-      // Container for aligning email and location in a row for Profile Component
-
-      profileDetails_container: {
-          display:"flex",
-          flex: 1,
-          flexDirection: 'row',
-          alignItems: 'center',
+      // style for email and location for Profile Component
+      profileDetails: {
           fontSize: "15px",
           color: "#999",
       },
+
       // Link style for Github, Xing, Linkedin Buttons in Profile Component
       profileDetails_links: {
         "&:hover": {
@@ -141,6 +144,8 @@ const customStyle = {
       margin: "20px auto 50px auto",
       textAlign: "center"
     }
+  
+
 
 };
 

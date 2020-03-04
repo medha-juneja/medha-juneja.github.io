@@ -19,9 +19,11 @@ const Education = () => {
                 { /* Education start */}
                 <div className={classes.textCenter}>
                       { /* Education title start */}
-                      <div className={classes.heading_container}>
-                        <i class="fas fa-graduation-cap fa-2x"></i>
-                        <h2 className={classes.heading}>Education</h2>
+                      <div className={classes.alignHeading_container}>
+                        <div className={classes.alignRow_container}>
+                          <i class="fas fa-graduation-cap fa-2x" style={{color:"#00acc1"}}></i>
+                          <h2 className={classes.heading}>Education</h2>
+                        </div>
                       </div>
                       { /* Education title end */}
 
