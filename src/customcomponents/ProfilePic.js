@@ -30,8 +30,8 @@ const ProfilePic = () => {
                     <img  src={profilepic} className={imageClasses} alt="Medha Juneja"/>
                   </div>
 
-
-                  <div className={classes.name}>
+                  <div className={classes.alignColumn_container}>
+                    <div className={classes.name}>
                       { /* Name */}
                       <h1 className={classes.title}>Medha Juneja</h1>
 
@@ -56,6 +56,7 @@ const ProfilePic = () => {
                       <Button target="_blank" href="https://github.com/medha-juneja" justIcon link className={classes.profileDetails_links}>
                         <i className={"fab fa-github"} />
                       </Button>
+                    </div>
                   </div>
 
 
