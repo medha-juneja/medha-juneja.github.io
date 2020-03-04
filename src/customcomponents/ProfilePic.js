@@ -35,7 +35,7 @@ const ProfilePic = () => {
                       { /* Name */}
                       <h1 className={classes.title}>Medha Juneja</h1>
 
-                      <div className={classes.profileDetails_container}>
+                      <div className={classNames(classes.alignRow_container, classes.profileDetails)}>
                         { /* EmailID */}
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <span style={{marginLeft:"5px"}}>medhaj001@gmail.com</span>

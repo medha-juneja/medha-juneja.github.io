@@ -122,13 +122,16 @@ const customStyle = {
         alignItems: 'center'
       },
 
+      alignRow_container: {
+        display:"flex",
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+      },
+
       // Container for aligning email and location in a row for Profile Component
 
-      profileDetails_container: {
-          display:"flex",
-          flex: 1,
-          flexDirection: 'row',
-          alignItems: 'center',
+      profileDetails: {
           fontSize: "15px",
           color: "#999",
       },
