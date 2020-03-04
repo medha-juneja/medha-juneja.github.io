@@ -6,7 +6,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
-import { Apps, Email, Home, ListAlt, Settings, Stars } from "@material-ui/icons";
+import { Apps, Email, Home, ListAlt, Settings, Assignment } from "@material-ui/icons";
 import {Link} from "react-scroll";
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -90,7 +90,7 @@ export function RightHeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
         >
-          <Stars className={classes.icons} />
+          <Assignment className={classes.icons} />
           Patents
         </Button>
       </ListItem>
