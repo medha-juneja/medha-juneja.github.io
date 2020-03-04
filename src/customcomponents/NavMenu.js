@@ -95,7 +95,7 @@ export function RightHeaderLinks(props) {
         </Button>
       </ListItem>
     </Link>
-      { /* Resume Link end */}
+      { /* Patents Link end */}
 
       { /* Blog Link start */}
       <ListItem className={classes.listItem}>
