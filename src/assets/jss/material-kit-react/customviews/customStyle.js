@@ -109,14 +109,23 @@ const customStyle = {
           marginTop: "-110px"
         },
 
-      // Container for Details in Profile Component
+      // Container for aligning Profile Details in a column for Profile Component
+
+      alignColumn_container: {
+        display:"flex",
+        flex: 1,
+        flexDirection: 'column',
+        alignItems: 'center'
+      },
+
+      // Container for aligning email and location in a row for Profile Component
+
       profileDetails_container: {
           display:"flex",
           flex: 1,
           flexDirection: 'row',
           alignItems: 'center',
           fontSize: "15px",
-          marginLeft: "150px",
           color: "#999",
       },
       // Link style for Github, Xing, Linkedin Buttons in Profile Component
