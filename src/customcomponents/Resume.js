@@ -29,7 +29,7 @@ const Resume = () => {
 
                     { /* Medneo position start*/}
 
-                    <div style={{textAlign:"left", marginLeft:"70px"}}>
+                    <div style={{textAlign:"left"}}>
                       { /* Image processing position title*/}
                       <h3 className={classes.subheading}>Image Processing Engineer - Medneo GmbH, Berlin</h3>
                       { /* Calender and Date */}
@@ -65,7 +65,7 @@ const Resume = () => {
                       <br/>
 
                       { /* DFKI position start*/}
-                      <div style={{textAlign:"left", marginLeft:"70px"}}>
+                      <div style={{textAlign:"left"}}>
 
                         { /* Research Assistant position title */}
                         <h3 className={classes.subheading}>
@@ -106,7 +106,7 @@ const Resume = () => {
                       <br/>
 
                       { /* MMCI position start*/}
-                      <div style={{textAlign:"left", marginLeft:"70px"}}>
+                      <div style={{textAlign:"left"}}>
 
                         { /* MMCI position title*/}
                         <h3 className={classes.subheading}>Research Assistant -  Cluster of Excellence Multimodal Computing and Interaction (MMCI), Saarland University, Saarbrücken</h3>

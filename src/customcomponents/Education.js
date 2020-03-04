@@ -28,7 +28,7 @@ const Education = () => {
                       { /* Education title end */}
 
                         { /* M.Sc degree start */}
-                        <div style={{textAlign:"left", marginLeft:"70px"}}>
+                        <div style={{textAlign:"left"}}>
 
                           { /* M.Sc. title */}
                           <h3 className={classes.subheading}>M.Sc.in Visual Computing</h3>
@@ -57,7 +57,7 @@ const Education = () => {
                         <br/>
 
                       { /* B.Tech degree start */}
-                        <div style={{textAlign:"left", marginLeft:"70px"}}>
+                        <div style={{textAlign:"left"}}>
                           { /* B.Tech degree title */}
                           <h3 className={classes.subheading}>Bachelor of Technology in Computer Science and Engineering</h3>
                           { /* University */}
@@ -86,7 +86,7 @@ const Education = () => {
                         <br/>
 
                       { /* High school degree start*/}
-                      <div style={{textAlign:"left", marginLeft:"70px"}}>
+                      <div style={{textAlign:"left"}}>
                         { /* High School degree title*/}
                         <h3 className={classes.subheading}>High School Diploma</h3>
                         { /* University */}
