@@ -10,6 +10,7 @@ const customStyle = {
     zIndex: "3"
   },
 
+  // Stying for space between the cards
   mainRaised: {
     margin: "10px 30px 0px",
     borderRadius: "6px",
@@ -33,6 +34,7 @@ const customStyle = {
 
     description: {
       textTransform:"none",
+      width: "100%",
       color: "#000",
       textAlign: "left",
       fontFamily: "Open Sans",
