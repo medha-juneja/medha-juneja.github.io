@@ -6,6 +6,11 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from 'components/Grid/GridItem.js';
 import styles from 'assets/jss/material-kit-react/customviews/customStyle.js';
 import {DateRange} from '@material-ui/icons';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import Typography from '@material-ui/core/Typography';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+
 
 
 const useStyles = makeStyles(styles);
@@ -89,6 +94,28 @@ const Resume = () => {
                             <i class="fas fa-external-link-alt" />
                             &nbsp;Individualized Implants and Prosthetics for the Lower Extremities
                           </Link>
+                          <br/>
+                          { /* Video of IIP-EXTREM project*/}
+                          <div>                          
+                            <ExpansionPanel>
+                            
+                            <ExpansionPanelSummary
+                                
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                              >
+                                <Typography>Video</Typography>
+                            </ExpansionPanelSummary>
+                            <ExpansionPanelDetails>
+                              <Typography>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                              </Typography>
+                            </ExpansionPanelDetails>
+                            </ExpansionPanel>
+                          </div>
+
+
 
                           <ul style={{lineHeight: 1.7}}>
                             <li>Applied different surface extraction techniques such as Marching Cubes, Dual Contouring and several Mesh Smoothing algorithms.</li>
