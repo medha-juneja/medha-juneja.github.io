@@ -86,8 +86,8 @@ const Resume = () => {
                           { /* Link to IIP=EXTREM project website*/}
                           <Link target="_blank" href="https://www.dfki.de/web/forschung/projekte-publikationen/projekte/projekt/iip-extrem/"
                           color="inherit" rel="noopener" className={classes.themelinks}>
-                          <i class="fas fa-external-link-alt" />
-                          Individualized Implants and Prosthetics for the Lower Extremities
+                            <i class="fas fa-external-link-alt" />
+                            &nbsp;Individualized Implants and Prosthetics for the Lower Extremities
                           </Link>
 
                           <ul style={{lineHeight: 1.7}}>
