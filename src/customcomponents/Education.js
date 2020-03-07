@@ -5,6 +5,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/customviews/customStyle.js";
 import {DateRange} from "@material-ui/icons";
+import masterthesis from "assets/docs/MasterThesis.pdf"
 
 
 const useStyles = makeStyles(styles);
@@ -42,7 +43,12 @@ const Education = () => {
                           <p className={classes.description}>
                             { /* Msc thesis */}
                             <h4 className={classes.heading4}>Master Thesis:</h4>
-                            Iso-Surface Extraction of Clinical CT Images for Surgery Planning
+                            <a target="_blank" href={masterthesis} color="inherit" 
+                            rel="noopener noreferrer" className={classes.themelinks}>
+                              <i class="fas fa-external-link-alt" /> 
+                               &nbsp;Iso-Surface Extraction of Clinical CT Images for Surgery Planning
+                            </a>
+                            
                             { /* Msc courses */}
                             <h4 className={classes.heading4}>Courses:</h4>
                             Computer Graphics ( Check out the Ray Tracer project here), Image Processing and Computer Vision,
