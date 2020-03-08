@@ -10,6 +10,9 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import Typography from '@material-ui/core/Typography';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMore from '@material-ui/icons/ExpandMore';
+import ReactPlayer from "react-player" 
+
 
 
 
@@ -94,22 +97,20 @@ const Resume = () => {
                             <i class="fas fa-external-link-alt" />
                             &nbsp;Individualized Implants and Prosthetics for the Lower Extremities
                           </Link>
-                          <br/>
+                 
                           { /* Video of IIP-EXTREM project*/}
                           <div>                          
-                            <ExpansionPanel>
-                            
-                            <ExpansionPanelSummary
+                            <ExpansionPanel className={classes.videopanel}>                            
+                                <ExpansionPanelSummary expandIcon={<ExpandMore/>}>
                                 
-                                aria-controls="panel1a-content"
-                                id="panel1a-header"
-                              >
-                                <Typography>Video</Typography>
+                                <Typography style={{color: "#00acc1"}}>Video : Surgery Planning GUI</Typography>
+                                
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
                               <Typography>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                sit amet blandit leo lobortis eget.
+                                <ReactPlayer
+                                    url="https://vimeo.com/267974369"
+                                  /> 
                               </Typography>
                             </ExpansionPanelDetails>
                             </ExpansionPanel>
