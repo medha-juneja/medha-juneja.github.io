@@ -6,6 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from 'components/Grid/GridItem.js';
 import styles from 'assets/jss/material-kit-react/customviews/customStyle.js';
 import {DateRange} from '@material-ui/icons';
+import VideoExpansionPanel from 'customcomponents/VideoExpansionPanel.js';
 
 
 const useStyles = makeStyles(styles);
@@ -89,6 +90,9 @@ const Resume = () => {
                             <i class="fas fa-external-link-alt" />
                             &nbsp;Individualized Implants and Prosthetics for the Lower Extremities
                           </Link>
+                 
+                          { /* Video of IIP-EXTREM project*/}
+                          <VideoExpansionPanel></VideoExpansionPanel>
 
                           <ul style={{lineHeight: 1.7}}>
                             <li>Applied different surface extraction techniques such as Marching Cubes, Dual Contouring and several Mesh Smoothing algorithms.</li>

@@ -145,7 +145,13 @@ const customStyle = {
     navWrapper: {
       margin: "20px auto 50px auto",
       textAlign: "center"
-    }
+    },
+
+  // Video Expansion panel style
+  videopanel:{
+    boxShadow: "none",
+    maxWidth: "90%"
+  }
   
 
 
