@@ -6,14 +6,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from 'components/Grid/GridItem.js';
 import styles from 'assets/jss/material-kit-react/customviews/customStyle.js';
 import {DateRange} from '@material-ui/icons';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import Typography from '@material-ui/core/Typography';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpandMore from '@material-ui/icons/ExpandMore';
-import ReactPlayer from "react-player" 
-
-
+import VideoExpansionPanel from 'customcomponents/VideoExpansionPanel.js';
 
 
 const useStyles = makeStyles(styles);
@@ -99,22 +92,8 @@ const Resume = () => {
                           </Link>
                  
                           { /* Video of IIP-EXTREM project*/}
-                          <div>                          
-                            <ExpansionPanel className={classes.videopanel}>                            
-                                <ExpansionPanelSummary expandIcon={<ExpandMore/>}>
-                                
-                                <Typography style={{color: "#00acc1"}}>Video : Surgery Planning GUI</Typography>
-                                
-                            </ExpansionPanelSummary>
-                            <ExpansionPanelDetails>
-                              <Typography>
-                                <ReactPlayer
-                                    url="https://vimeo.com/267974369"
-                                  /> 
-                              </Typography>
-                            </ExpansionPanelDetails>
-                            </ExpansionPanel>
-                          </div>
+                          <VideoExpansionPanel></VideoExpansionPanel>
+
 
 
 
