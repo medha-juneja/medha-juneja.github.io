@@ -150,6 +150,7 @@ const customStyle = {
   // Video Expansion panel style
   videopanel:{
     boxShadow: "none",
+    maxWidth: "90%"
   }
   
 
