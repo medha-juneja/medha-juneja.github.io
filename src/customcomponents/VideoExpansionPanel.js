@@ -18,10 +18,12 @@ const VideoExpansionPanel = () => {
                 <div>                          
                 <ExpansionPanel className={classes.videopanel}>
 
+                    { /* Expansion Panel Heading*/}
                     <ExpansionPanelSummary expandIcon={<ExpandMore/>}>                    
                     <Typography style={{color: "#00acc1"}}>Video : Surgery Planning GUI</Typography>                    
                     </ExpansionPanelSummary>
 
+                    { /* Expansion Panel Content*/}
                     <ExpansionPanelDetails>
                     <Typography>
                         <ReactPlayer

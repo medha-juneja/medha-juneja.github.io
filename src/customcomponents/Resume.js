@@ -94,9 +94,6 @@ const Resume = () => {
                           { /* Video of IIP-EXTREM project*/}
                           <VideoExpansionPanel></VideoExpansionPanel>
 
-
-
-
                           <ul style={{lineHeight: 1.7}}>
                             <li>Applied different surface extraction techniques such as Marching Cubes, Dual Contouring and several Mesh Smoothing algorithms.</li>
                             <li>Integrated and worked with several libraries such as Boost, OpenSubdiv and VCGLib (MeshLab) in Unreal Engine.</li>
